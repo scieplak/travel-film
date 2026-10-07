@@ -19,3 +19,9 @@
 - Do not edit a running bash render script — bash reads it while executing.
 - The person's taste after real projects: chronology over theme; fewer car photos; no blurred enlarged faces
   behind prints; no jittery cuts; no dialogue; music with character; maps must match reality.
+- Loop-based catalogue tracks repeat a 16-bar phrase almost verbatim; a viewer hears it as "the music plays twice".
+  Use each phrase once and jump to a later section of the track on a bar line instead of letting it loop.
+- Tracks can contain multi-second silent breaks. Whenever the plan reaches a new part of a track, scan the RMS of
+  the media range actually used, and skip a break by a whole number of beats so the cut grid stays in phase.
+- Real film edge print: Kodak Gold 200 reads "KODAK GB 200" plus the frame number ("▶ 23 ▶ 23A") and a DX barcode.
+  Take the frame numbers from the real scans.
