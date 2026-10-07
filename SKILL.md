@@ -32,6 +32,10 @@ long it takes.
 - **Never surprise-publish or delete.** Keep every previous render; new versions get new names.
 - **Protect the machine.** Long 4K renders go through `scripts/render_parts.sh` (parts, 2 workers, memory guard,
   detached). A single big render once filled 32 GB and shut the laptop down.
+- **Footage stays local.** Process media only with local tools (FFmpeg, OpenCV, on-device transcription). Do not
+  use upload paths such as `heygen asset upload`, HeyGen cloud render, or `hyperframes capture` vision captioning
+  without the person's explicit OK. Send Nominatim only place names, never GPS. The README privacy table lists
+  every outbound flow.
 - **Corrections come in batches.** When the person starts giving fixes one by one, write each into a
   `corrections.md` (and memory) and do not render until they say the list is complete.
 
