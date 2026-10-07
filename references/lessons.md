@@ -25,3 +25,8 @@
   the media range actually used, and skip a break by a whole number of beats so the cut grid stays in phase.
 - Real film edge print: Kodak Gold 200 reads "KODAK GB 200" plus the frame number ("▶ 23 ▶ 23A") and a DX barcode.
   Take the frame numbers from the real scans.
+- After lengthening a day (inserts), re-check every music hand-over: the next track can end up starting seconds
+  before the previous one ends (two songs at once). Hand over at the day map and keep the beat mapping. Also check
+  where each track goes silent on its own (some end several seconds before the file does).
+- A push-in on a single film frame must move the whole strip (frame, perforations, edge print), never just the photo
+  inside a static frame. Keep the edge print inside the frame (scale about 0.965 → 1.0, with a static backdrop).
