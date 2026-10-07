@@ -1,0 +1,22 @@
+{
+  "_comment": "Fictional example. Coordinates are [lat, lon]; outline file is [[lon, lat], ...] from fetch_outline.py.",
+  "outline": "work/outline.json",
+  "center": [38.75, 20.70],
+  "scale": 1400,
+  "peak": {"name": "Mt. Example", "at": [38.70, 20.68]},
+  "waypoints": {
+    "Airport": [38.62, 20.76],
+    "Coast road bend": [38.66, 20.72],
+    "Old Town": [38.71, 20.70],
+    "Beach": [38.78, 20.65],
+    "Pass": [38.74, 20.63]
+  },
+  "days": [
+    {"n": 1, "date": "01.06", "title": "Arrival",
+     "route": ["Airport", "Coast road bend", "Old Town"],
+     "labels": [["Airport", 1], ["Old Town", -1]]},
+    {"n": 2, "date": "02.06", "title": "Over the pass",
+     "route": ["Old Town", "Pass", "Beach"],
+     "labels": [["Hidden beach", "Beach", 1]]}
+  ]
+}

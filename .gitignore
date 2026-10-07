@@ -1,0 +1,15 @@
+work/
+renders/
+*.mp4
+*.mov
+*.MP4
+*.MOV
+*.LRV
+*.wav
+*.mp3
+*.heic
+*.HEIC
+*.jpg
+*.png
+__pycache__/
+.DS_Store
