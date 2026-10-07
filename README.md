@@ -105,6 +105,27 @@ export TRAVEL_FILM_PYTHON=~/.venvs/travel-film/bin/python
 You also need Node with `npx hyperframes`, the HyperFrames skills (`/hyperframes`, `/media-use`) and FFmpeg.
 For on-device transcription, run `npx hyperframes models install parakeet`.
 
+### Recommended: privacy setup (do this once)
+
+These are personal photos and videos. Before the first film, switch off everything that is not needed:
+
+```bash
+npx hyperframes telemetry disable        # HyperFrames usage telemetry (PostHog)
+heygen config set analytics false        # HeyGen CLI analytics (only if you use the music catalogue)
+```
+
+Or per shell / CI: `export HYPERFRAMES_NO_TELEMETRY=1 DO_NOT_TRACK=1`.
+Check: `npx hyperframes telemetry status` and `heygen config get analytics`.
+
+Claude itself sees stills and transcripts (that is how it reviews the footage):
+
+- **Free / Pro / Max**: open claude.ai → Settings → Privacy and turn off *"Help improve Claude"* if you don't want
+  your sessions used for model training.
+- **Team / Enterprise / API**: not used for training by default, but your organisation's retention and admin
+  policies apply. Consider a personal account for personal footage.
+
+None of this changes what the skill can do. Transcription, grading, maps and rendering all run locally.
+
 Then ask Claude something like *"edit a holiday film from ~/Movies/trip"*.
 
 ## Privacy: where your footage goes

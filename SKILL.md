@@ -41,6 +41,10 @@ long it takes.
 
 ## Stage 1 — Review (no rendering)
 
+0. **Privacy check** (first film on a machine): run `npx hyperframes telemetry status` and, if the HeyGen CLI is
+   installed, `heygen config get analytics`. If either is on, tell the person and offer the opt-out commands from
+   the README ("Recommended: privacy setup"). Changing their config is their call, so ask first. Also mention once
+   that Claude sees stills and transcripts, and where the training setting lives for their plan.
 1. **Inventory** everything: `python3 scripts/inventory.py --out work/inventory.json <dirs…>` — dates, GPS,
    rotation flags, HDR, GoPro lens mode (`VFOV`: W/S = fisheye, L = Linear), GoPro GPS presence.
 2. **Contact sheets**: `python3 scripts/contact_sheets.py --inventory work/inventory.json --out work/review`.
